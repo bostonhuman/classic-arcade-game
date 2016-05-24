@@ -17,3 +17,13 @@ back to the initial location.
 2. **Right key** : move the player to the right.
 3. **Up key** : move the player up.
 4. **Down key** : move the player down.
+
+## Getting Started
+
+1. **clone this repository** by Terminal
+
+```
+$ git clone https://github.com/bostonhuman/classic-arcade-game
+```
+
+2. **Open index.html file** to access the game

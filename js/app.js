@@ -31,14 +31,16 @@ Enemy.prototype.update = function(dt) {
     //If the player comes within 30px of an enemy's x and y coordinates, reset the game
     if (player.x >= this.x - 30 && player.x <= this.x + 30) {
         if (player.y >= this.y - 30 && player.y <= this.y + 30) {
-            this.reset();
+            player.reset();
         }
     }
 };
+
 // Draw the enemy and player objects on the screen
 Object.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
+
 
 
 // Now write your own player class
@@ -80,10 +82,16 @@ Player.prototype.update = function() {
     }
 };
 
-//Reset player to beginning position
+/*//Reset player to beginning position
 Object.prototype.reset = function() {
     player.x = 200;
     player.y = 400;
+};*/
+
+//Reset player to beginning position
+Player.prototype.reset = function() {
+    this.x = 200;
+    this.y = 400;
 };
 
 
